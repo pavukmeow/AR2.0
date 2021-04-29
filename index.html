@@ -18,14 +18,21 @@
         <a-asset-item id="animation-asset" src="TRS\AR"></a-asset-item>
       </a-assets>
       
-      <a-entity
+      <!-- <a-entity
       look-at="[gps-camera]" 
       animation-mixer="loop: repeat"
       gltg-model="#animation-asset"
       scale="120 120 120"
       gps-entity-place="latitude: 59.4132136; longitude: 56.7343864"
       >
-      </a-entity>
+      </a-entity> -->
+
+      <a-text
+      value="#animation-asset"
+      look-at="[gps-camera]"
+      scale="120 120 120"
+      gps-entity-place="latitude: 59.4132136; longitude: 56.7343864"
+    ></a-text>
 
       <a-camera gps-camera rotation-reader></a-camera>
     </a-scene>
