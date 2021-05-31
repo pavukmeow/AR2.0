@@ -3,12 +3,25 @@
 <script src="aframe.min.js"></script>
 <script src="aframe-ar.js"></script>
 <body>
-<a-scene embedded arjs>
+<!-- <a-scene embedded arjs>
     <a-assets>
         <img id="transpImage" src="3Us_Z_IrbkQ.jpg">
     </a-assets>
     <a-image width="1" height="1" src="#transpImage"></a-image>
     <a-marker-camera preset='hiro'></a-marker-camera>
-</a-scene>
+</a-scene> -->
+    a-scene embedded arjs="sourceType: webcam;">
+      <a-marker preset="hiro">
+        <a-entity
+            <a-image width="1" height="1" src="#transpImage"></a-image>
+        </a-entity>
+        <a-plane>
+
+
+
+      </a-marker>
+  <a-entity camera>
+  </a-entity>
+  </a-scene>
 </body>
 </html>
