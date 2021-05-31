@@ -112,7 +112,7 @@ function initialize()
 		type: 'pattern', patternUrl: "hiro.patt",
 	})
 
-	let geometry1 = new THREE.PlaneBufferGeometry(1,1, 4,4);
+	let geometry1 = new THREE.PlaneBufferGeometry(10,10, 10,10);
 	let loader = new THREE.TextureLoader();
 	let texture = loader.load( 'wat2.jpg', render );
 	let material1 = new THREE.MeshBasicMaterial( { map: texture } );
